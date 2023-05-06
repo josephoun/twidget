@@ -1,2 +1,2 @@
 # twidget
-T Recommendation Widget
+Taboola Recommendation Widget
