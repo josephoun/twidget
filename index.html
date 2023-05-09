@@ -1,0 +1,34 @@
+    <html>
+
+        <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="twidget.min.js"></script>
+            <script>
+                var twidget = new TWidget(
+                    "taboola-templates",
+                    "desktop",
+                    "f9040ab1b9c802857aa783c469d0e0ff7e7366e4"
+                );
+            </script>
+        </head>
+
+        <body>
+
+            <div id="taboola_recommendations" class="t-box">
+                <div class="widget-title">More For You</div>
+                <div id="widget_container">
+                    <script>
+                        // publishers can provide a different template (optional) as last parameter to the register function
+                        twidget.register("widget_container", "video", 6).then(function (element) {
+                            taboola_recommendations.style.display = "block";
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <script>
+                twidget.build();
+            </script>
+        </body>
+
+    </html>
